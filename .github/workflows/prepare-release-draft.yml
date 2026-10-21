@@ -1,0 +1,25 @@
+name: Prepare approved v1.21.1 release draft
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/prepare-release-draft.yml"
+      - "release-drafts/v1.21.1.md"
+permissions:
+  contents: write
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Prepare draft without replacing an existing release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if gh release view v1.21.1 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "The release already exists; leaving its contents unchanged."
+            exit 0
+          fi
+          gh release create v1.21.1 --repo "$GITHUB_REPOSITORY" --target main --title "PetCompanion v1.21.1 — Update connection" --notes-file release-drafts/v1.21.1.md --draft --prerelease
