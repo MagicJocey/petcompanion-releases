@@ -1,0 +1,47 @@
+name: Feature or pet idea
+description: Suggest a feature, pet, appearance or improvement.
+title: "[Idea]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are welcome! Search existing suggestions first. A suggestion does not promise implementation or a release date.
+        Keep personal goals and notebook content private, and only attach artwork you have permission to share.
+  - type: dropdown
+    id: type
+    attributes:
+      label: What kind of idea is this?
+      options:
+        - New feature
+        - New pet or evolution
+        - New appearance or food
+        - Existing feature improvement
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: Describe what you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: How would it help?
+      description: Describe a use case with a made-up example if helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or extra details
+      description: Optional. For attached artwork, explain permission, attribution and any AI assistance.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before posting
+      options:
+        - label: I included no private notebook content and have permission to share any attached material.
+          required: true

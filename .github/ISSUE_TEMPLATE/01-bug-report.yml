@@ -1,0 +1,79 @@
+name: Bug report
+description: Report a crash, update problem, pet animation bug or other unexpected behavior.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping PetCompanion improve! Search existing issues first.
+        This report is public. Do not attach saves, backups, real notebook entries or credentials. Use made-up examples and crop private details from screenshots.
+        For suspected security vulnerabilities, follow [the security policy](https://github.com/MagicJocey/petcompanion-releases/blob/main/SECURITY.md).
+  - type: input
+    id: app-version
+    attributes:
+      label: PetCompanion version
+      description: The version shown in the app, such as 1.22.0.
+    validations:
+      required: true
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 or Windows 10; build number if known
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did it happen?
+      options:
+        - Pet artwork or animation
+        - Feeding, care or egg hatching
+        - Levels, evolutions or appearances
+        - Goals, notebook or achievements
+        - Compact mode, resizing or layout
+        - Installation or updates
+        - Saving, backup or restore
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: pet-details
+    attributes:
+      label: Pet and display details
+      description: If relevant, name the pet, evolution, appearance, action and full/compact mode.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open...
+        2. Choose...
+        3. Click...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Include the exact error text if there is one, with private information removed.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Optional screenshots or extra details
+      description: For update failures, include the starting version and the update stage that failed. Do not attach private saves or backups.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before posting
+      options:
+        - label: I checked this report and attachments for personal notes, saves, backups and credentials.
+          required: true

@@ -1,5 +1,7 @@
 # Contributor Covenant Code of Conduct
 
+PetCompanion is a welcoming community for testers, pet lovers and contributors. Be kind, respect different needs and experience levels, and keep feedback constructive. For app bugs and suggestions, see [Contributing](CONTRIBUTING.md). Keep personal notebook entries, saves and backups out of public posts.
+
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in our

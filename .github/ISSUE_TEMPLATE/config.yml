@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and general feedback
+    url: https://github.com/MagicJocey/petcompanion-releases/discussions
+    about: Ask for help or discuss ideas with the PetCompanion community.
+  - name: Downloads and release notes
+    url: https://github.com/MagicJocey/petcompanion-releases/releases/latest
+    about: Find the latest official Windows installer and update information.
+  - name: Report a security concern privately
+    url: https://github.com/MagicJocey/petcompanion-releases/blob/main/SECURITY.md
+    about: Read the private reporting instructions before sharing security details.
