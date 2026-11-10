@@ -6,9 +6,9 @@ A cozy Windows desktop companion for little goals and a growing fantasy pet fami
 
 ## Download the latest release
 
-[**PetCompanion v1.22.0 — Flowerhood & Celestial Sonata**](https://github.com/MagicJocey/petcompanion-releases/releases/tag/v1.22.0)
+[**PetCompanion v1.23.0 — My Pets & New Companions**](https://github.com/MagicJocey/petcompanion-releases/releases/tag/v1.23.0)
 
-Download `PetCompanion-Setup-1.22.0-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
+Download `PetCompanion-Setup-1.23.0-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
 
 Public versions from 1.21.1 onward check for updates on startup. You can also open **? / Welcome / Help → Check for updates**. Available updates show their version and release notes, and ask before downloading and installing.
 
@@ -16,8 +16,10 @@ Older releases remain on the [Releases page](https://github.com/MagicJocey/petco
 
 ## What’s inside
 
-- Eleven animated fantasy pet families, with 42 discoverable collection forms.
-- Flowerhood: 31 appearances and a growing family, from a duo at level 2 to a five-companion tower at level 20. Saved partners, corrected movement and shared berry-bowl meals follow every stage.
+- Sixteen animated fantasy pet families, with 58 discoverable collection forms.
+- My Pets portrait cards with search, filters, sorting, favorites, care and goal counts, including compact-mode access.
+- Five new families: Wolf, Spindle the spider, Riptide the crystal shark, Thistle the woodland ram, and Solstice the winged lion, with saved branches or alternate appearances, evolutions, sleeping poses and tailored feeding bowls.
+- Flowerhood: 33 appearances, including Neon Orbit and Midnight Rose, and a growing family, from a duo at level 2 to a five-companion tower at level 20. Saved partners, corrected movement and shared berry-bowl meals follow every stage.
 - Celestial Sonata at level 5, with Original, Dawncloud and Amber appearances, feeding animations and sleeping poses. Amber enjoys Sunstone nectar.
 - A goal notebook with 10–100 XP rewards for your chosen pet, pet-themed notes and nine achievements.
 - Per-pet saved care bars, pet-specific foods, egg tending and feeding animations.
