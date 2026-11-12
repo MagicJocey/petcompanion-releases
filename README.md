@@ -6,9 +6,9 @@ A cozy Windows desktop companion for little goals and a growing fantasy pet fami
 
 ## Download the latest release
 
-[**PetCompanion v1.23.0 — My Pets & New Companions**](https://github.com/MagicJocey/petcompanion-releases/releases/tag/v1.23.0)
+[**PetCompanion v1.23.1 — Egg size polish**](https://github.com/MagicJocey/petcompanion-releases/releases/tag/v1.23.1)
 
-Download `PetCompanion-Setup-1.23.0-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
+Download `PetCompanion-Setup-1.23.1-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
 
 Public versions from 1.21.1 onward check for updates on startup. You can also open **? / Welcome / Help → Check for updates**. Available updates show their version and release notes, and ask before downloading and installing.
 
