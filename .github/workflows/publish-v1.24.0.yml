@@ -1,0 +1,55 @@
+name: Publish v1.24.0 Egg Shop and Coins
+on:
+  schedule:
+    - cron: '53 18 15 11 *'
+    - cron: '7 19 15 11 *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: petcompanion-release-v1-24-0
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Verify artifacts and publish the scheduled draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: '445696336'
+          TAG: 'v1.24.0'
+          EXPECTED_ASSETS: '{"PetCompanion-Setup-1.24.0-x64.exe": "sha256:2a336d8e1f224e0f8df11640b86971b39ef82da9f7161d4ac1791d015d2ebb5b", "PetCompanion-Setup-1.24.0-x64.exe.blockmap": "sha256:c8c4f3c23faeac587626ee1c269e8947327b961e29eb7f57b3f0f67a749057f0", "latest.yml": "sha256:dc5a3d55b7ede85c989e419be0708baf82ee40704b648a62c20bf3a60579e6eb", "SHA256SUMS.txt": "sha256:b03a910b22f741c6ddbe5fdda3f968a04fbd14e421c51db7ee876df659c2d5fc"}'
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REPOSITORY" = "MagicJocey/petcompanion-releases"
+          go_live=$(date -u -d '2026-11-15 19:00:00 UTC' +%s)
+          deadline=$(date -u -d '2026-11-15 20:00:00 UTC' +%s)
+          now=$(date -u +%s)
+          if (( now < go_live - 480 || now >= deadline )); then
+            echo "Outside the one-time release window; nothing will be published."
+            exit 0
+          fi
+          route="repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID"
+          check_draft() {
+            gh api "$route" | jq -e --arg tag "$TAG" --argjson expected "$EXPECTED_ASSETS" '
+              .tag_name == $tag and .target_commitish == "main" and .draft and (.prerelease | not)
+              and all(.assets[]; .state == "uploaded")
+              and ((.assets | map({key: .name, value: .digest}) | from_entries) == $expected)
+              and ((.assets | length) == ($expected | length))' >/dev/null
+          }
+          if gh api "$route" --jq '.draft' | grep -qx false; then
+            echo "This release is already published."
+            exit 0
+          fi
+          check_draft
+          wait_for=$((go_live - $(date -u +%s)))
+          if (( wait_for > 0 )); then sleep "$wait_for"; fi
+          now=$(date -u +%s)
+          (( now >= go_live && now < deadline ))
+          check_draft
+          test "$(gh api "repos/$GITHUB_REPOSITORY/releases/latest" --jq '.tag_name')" = "v1.23.1"
+          gh api --method PATCH "$route" -F draft=false -F prerelease=false -f make_latest=true             | jq -e --arg tag "$TAG" '.tag_name == $tag and (.draft | not) and (.prerelease | not)' >/dev/null
+          gh api "repos/$GITHUB_REPOSITORY/releases/latest" | jq -e --arg tag "$TAG" '.tag_name == $tag' >/dev/null
+          echo "PetCompanion $TAG is live."
