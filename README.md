@@ -6,9 +6,9 @@ A cozy Windows desktop companion for little goals and a growing fantasy pet fami
 
 ## Download the latest release
 
-[**PetCompanion v1.23.1 — Egg size polish**](https://github.com/MagicJocey/petcompanion-releases/releases/tag/v1.23.1)
+[**PetCompanion v1.24.0 — Egg Shop & Coins**](https://github.com/MagicJocey/petcompanion-releases/releases/latest)
 
-Download `PetCompanion-Setup-1.23.1-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
+Download `PetCompanion-Setup-1.24.0-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
 
 Public versions from 1.21.1 onward check for updates on startup. You can also open **? / Welcome / Help → Check for updates**. Available updates show their version and release notes, and ask before downloading and installing.
 
@@ -18,6 +18,7 @@ Older releases remain on the [Releases page](https://github.com/MagicJocey/petco
 
 - Sixteen animated fantasy pet families, with 58 discoverable collection forms.
 - My Pets portrait cards with search, filters, sorting, favorites, care and goal counts, including compact-mode access.
+- Earn coins and spend them in the Egg Shop to adopt more companions. Each companion has its own saved progress and goals.
 - Five new families: Wolf, Spindle the spider, Riptide the crystal shark, Thistle the woodland ram, and Solstice the winged lion, with saved branches or alternate appearances, evolutions, sleeping poses and tailored feeding bowls.
 - Flowerhood: 33 appearances, including Neon Orbit and Midnight Rose, and a growing family, from a duo at level 2 to a five-companion tower at level 20. Saved partners, corrected movement and shared berry-bowl meals follow every stage.
 - Celestial Sonata at level 5, with Original, Dawncloud and Amber appearances, feeding animations and sleeping poses. Amber enjoys Sunstone nectar.
