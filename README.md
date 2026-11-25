@@ -6,9 +6,9 @@ A cozy Windows desktop companion for little goals and a growing fantasy pet fami
 
 ## Download the latest release
 
-[**PetCompanion v1.25.0 — Garden & Growing Routines**](https://github.com/MagicJocey/petcompanion-releases/releases/latest)
+[**PetCompanion v1.26.0 — Seasonal Turkey & Window Positions**](https://github.com/MagicJocey/petcompanion-releases/releases/latest)
 
-Download `PetCompanion-Setup-1.25.0-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
+Download `PetCompanion-Setup-1.26.0-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
 
 Public versions from 1.21.1 onward check for updates on startup. You can also open **? / Welcome / Help → Check for updates**. Available updates show their version and release notes, and ask before downloading and installing.
 
@@ -16,7 +16,10 @@ Older releases remain on the [Releases page](https://github.com/MagicJocey/petco
 
 ## What’s inside
 
-- Sixteen animated fantasy pet families, with 58 discoverable collection forms.
+- Seventeen animated fantasy pet families, with 61 discoverable collection forms. The sixteen year-round starter families are joined by a shop-only seasonal Turkey.
+- Seasonal Turkey eggs cost 120 coins and are available through December 15, 2026, using your computer’s local date. Purchased eggs and companions stay permanently after the egg leaves the shop on December 16. Future seasonal shop dates will be announced separately.
+- Turkey hatches at level 2 and evolves into a Harvest Guardian at level 5, with normal and saved shiny appearances. Grow Harvest grains in crop plots for matching food. Turkey egg sizing matches the original eggs across all views.
+- Compact and regular mode remember separate positions across restarts; regular mode also remembers its size. Restored windows fit an available display.
 - My Pets portrait cards with search, filters, sorting, favorites, care and goal counts, including compact-mode access.
 - Earn coins and spend them in the Egg Shop to adopt more companions. Each companion has its own saved progress and goals.
 - Garden & Gathering with seeds, watering, fishing, beetle habitats, mining, cooking and magical crafting. Collect ready activities for food and coins. Growth continues offline and crops never wither.
