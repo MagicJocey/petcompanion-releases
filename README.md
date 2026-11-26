@@ -6,9 +6,9 @@ A cozy Windows desktop companion for little goals and a growing fantasy pet fami
 
 ## Download the latest release
 
-[**PetCompanion v1.26.0 — Seasonal Turkey & Window Positions**](https://github.com/MagicJocey/petcompanion-releases/releases/latest)
+[**PetCompanion v1.27.0 — Ocean Friends & Collection Eggs**](https://github.com/MagicJocey/petcompanion-releases/releases/latest)
 
-Download `PetCompanion-Setup-1.26.0-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
+Download `PetCompanion-Setup-1.27.0-x64.exe` from the release’s Assets section. Electron is included: no separate Electron install, Node.js, npm or command prompt is needed.
 
 Public versions from 1.21.1 onward check for updates on startup. You can also open **? / Welcome / Help → Check for updates**. Available updates show their version and release notes, and ask before downloading and installing.
 
@@ -16,7 +16,11 @@ Older releases remain on the [Releases page](https://github.com/MagicJocey/petco
 
 ## What’s inside
 
-- Seventeen animated fantasy pet families, with 61 discoverable collection forms. The sixteen year-round starter families are joined by a shop-only seasonal Turkey.
+- Nineteen animated fantasy pet families, with 67 discoverable collection forms. The sixteen original starter families are joined by shop-only Orca, Octopus and seasonal Turkey.
+- Orca and Octopus eggs are available year-round for 60 coins each. Both hatch at level 2 and evolve at level 5, with saved appearances, swimming actions, greetings, feeding and sleep poses. Grow Ocean fish bites and Reef fish bites at the pond.
+- Orca grows into a Celestial Orca, with original and plum/rose shiny appearances. Octopus has normal Crimson, plus Royal Blue and Obsidian sharing the existing care-based shiny chance equally. Hatch results stay through evolution, reload and XP undo.
+- Collection egg portraits unlock with matching discoveries across that family. Flowerhood shows its saved discovered partners. Palette previews follow the selected appearance and grant no discoveries; unknown portraits stay locked. Shop eggs and unhatched pets keep the shared mystery egg.
+- Consistent egg sizing across regular/compact mode, My Pets, shop, checkout and Collection, including static portraits and animated eggs.
 - Seasonal Turkey eggs cost 120 coins and are available through December 15, 2026, using your computer’s local date. Purchased eggs and companions stay permanently after the egg leaves the shop on December 16. Future seasonal shop dates will be announced separately.
 - Turkey hatches at level 2 and evolves into a Harvest Guardian at level 5, with normal and saved shiny appearances. Grow Harvest grains in crop plots for matching food. Turkey egg sizing matches the original eggs across all views.
 - Compact and regular mode remember separate positions across restarts; regular mode also remembers its size. Restored windows fit an available display.
@@ -24,7 +28,7 @@ Older releases remain on the [Releases page](https://github.com/MagicJocey/petco
 - Earn coins and spend them in the Egg Shop to adopt more companions. Each companion has its own saved progress and goals.
 - Garden & Gathering with seeds, watering, fishing, beetle habitats, mining, cooking and magical crafting. Collect ready activities for food and coins. Growth continues offline and crops never wither.
 - Food inventory with starter supplies. A real feed uses one matching pantry portion. Egg tending and eating previews use no food.
-- Five new families: Wolf, Spindle the spider, Riptide the crystal shark, Thistle the woodland ram, and Solstice the winged lion, with saved branches or alternate appearances, evolutions, sleeping poses and tailored feeding bowls.
+- Additional families include Wolf, Spindle the spider, Riptide the crystal shark, Thistle the woodland ram, and Solstice the winged lion, with saved branches or alternate appearances, evolutions, sleeping poses and tailored feeding bowls.
 - Flowerhood: 33 appearances, including Neon Orbit and Midnight Rose, and a growing family, from a duo at level 2 to a five-companion tower at level 20. Saved partners, corrected movement and shared berry-bowl meals follow every stage.
 - Celestial Sonata at level 5, with Original, Dawncloud and Amber appearances, feeding animations and sleeping poses. Amber enjoys Sunstone nectar.
 - A goal notebook with 10–100 XP rewards for your chosen pet, pet-themed notes and nine achievements. Duplicate a goal or add optional daily and weekly repeats, with pause/resume, streaks and earlier-occurrence history. Each occurrence has separate rewards. Missed periods never deduct XP, levels or coins.
